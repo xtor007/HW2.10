@@ -32,6 +32,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MCm-ER-bOM">
+                                <rect key="frame" x="370" y="854" width="24" height="22"/>
+                                <state key="normal" image="car.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="go:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bmA-wn-CNv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
@@ -42,6 +49,8 @@
                             <constraint firstItem="pKI-Ny-Jnp" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Lu0-oY-Ggv"/>
                             <constraint firstItem="pun-3m-OC3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="87" id="X1K-uT-kJW"/>
                             <constraint firstItem="pKI-Ny-Jnp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="XNp-1R-Qfs"/>
+                            <constraint firstAttribute="bottom" secondItem="MCm-ER-bOM" secondAttribute="bottom" constant="20" id="fEF-IV-7cc"/>
+                            <constraint firstItem="MCm-ER-bOM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-20" id="hd5-3q-STj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pun-3m-OC3" secondAttribute="trailing" constant="32" id="ic5-Jv-u6U"/>
                             <constraint firstItem="pun-3m-OC3" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="if5-hX-zHl"/>
                             <constraint firstItem="pun-3m-OC3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="qAH-BN-XSd"/>
@@ -60,6 +69,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="car.fill" catalog="system" width="128" height="93"/>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
