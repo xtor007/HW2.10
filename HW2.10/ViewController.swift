@@ -9,6 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let APIKey = "Aj_ujgA_oxEyeNnCZNCWRSdg0FdN4E-EZ0o03GObIKjp8cBkzDH8J3tRxw_48DQk"
+    let link = "http://dev.virtualearth.net/REST/V1/Routes/Driving?"
     
     @IBOutlet weak var city1: UITextField!
     @IBOutlet weak var city2: UITextField!
@@ -25,7 +27,11 @@ class ViewController: UIViewController {
         
     }
     
-    func 
+    func loadData() {
+        let urlLink = link + "wp.0=" + city1.text! + "&wp.1=" + city2.text! + "&key=" + APIKey
+        guard let url = URL(string: urlLink) else {return}
+        
+    }
     
     
 }
