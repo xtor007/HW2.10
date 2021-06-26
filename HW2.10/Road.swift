@@ -7,14 +7,14 @@
 
 import Foundation
 
-struct Road {
-    let resoursesSets: [Resourses]
+struct Road: Decodable {
+    let resourceSets: [Resourses]
 }
 
-struct Resourses {
-    let resourses: [Dist]
+struct Resourses: Decodable {
+    let resources: [Dist]
 }
 
-struct Dist {
+struct Dist: Decodable {
     let travelDistance: Float
 }
